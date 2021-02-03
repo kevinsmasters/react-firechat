@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// Firebase dependencies
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
+
+firebase.initializeApp({
+    apiKey: "AIzaSyBoV_KI13XxbItcp0IEyThuDWgQT7_no4c",
+    authDomain: "react-firechat-5218e.firebaseapp.com",
+    projectId: "react-firechat-5218e",
+    storageBucket: "react-firechat-5218e.appspot.com",
+    messagingSenderId: "299249052995",
+    appId: "1:299249052995:web:bb6e7a4a01270516d8d3f6"
+  })
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div></div>
   );
 }
 
