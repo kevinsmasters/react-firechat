@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // Components
 import Button from "./components/Button";
+import Channel from "./components/Channel";
 
 // Firebase dependencies
 import firebase from "firebase/app";
