@@ -8,18 +8,22 @@ const Message = ({
     photoURL = '',
 }) => {
     return (
-        <div>
+        <div className="flex flex-row">
+            <div className="text-sm mr-2 w-20">
             {photoURL ? (
                 <img src={photoURL} alt="Avatar" width={45} height={45} />
             ) : null }
-            { displayName ? <p>{displayName}</p> : null}
+            { displayName ? <p className="text-xs">{displayName}</p> : null}
+            </div>
+            <div>
             {createdAt ?.seconds ? (
-                <span>
+                <span className="text-xs">
                     {formatRelative(new Date(createdAt.seconds * 1000), new Date()
                     )}
                 </span>
             ) : null}
             <p>{text}</p>
+            </div>
         </div>
             )
         }

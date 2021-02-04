@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // Components
 import Button from "./components/Button";
 import Channel from "./components/Channel";
+import Logo from "./components/Logo";
 
 // Firebase dependencies
 import firebase from "firebase/app";
@@ -62,7 +63,9 @@ function App() {
   if (initializing) return "Loading...";
 
   return (
-    <div>
+    <div className="container max-w-lg">
+    <Logo />
+    <div className="bg-gray-800 p-4 text-gray-50">
       {user ? (
         <>
             <Button onClick={signOut}>Sign out</Button>
@@ -71,6 +74,7 @@ function App() {
       ) : (
         <Button onClick={signInWithGoogle}>Sign in with Google</Button>
       )}
+    </div>
     </div>
   );
 }
