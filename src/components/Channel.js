@@ -62,7 +62,7 @@ const Channel = ({ user = null, db = null }) => {
       </ul>
       <form onSubmit={handleOnSubmit}>
       <input type="text" value={newMessage} onChange={handleOnChange} placeholder="Type your message here..." />
-      <button type="submit" disabled={!newMessage}>Send</button>
+      <button className="px-1 py-0.5 bg-green-500" type="submit" disabled={!newMessage}>Send</button>
       </form>
       </>
   );
